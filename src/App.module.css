@@ -1,0 +1,75 @@
+/* App.module.css */
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.demoHeader {
+  background-color: #3498db; 
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.demoActions {
+  display: flex;
+  align-items: center;
+}
+
+.loginContainer {
+  margin-right: 20px;
+}
+
+.freeTrial {
+  padding: 10px 20px;
+  background-color: #515252; 
+  color: white;
+  border-radius: 5px;
+}
+
+.popularHeader {
+  background-color: rgb(73, 71, 71); 
+  padding: 20px;
+  color: white;
+}
+
+.popularTitle {
+  margin: 0;
+}
+
+.moviesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Ajustamos el tamaño mínimo y máximo de las columnas */
+  gap: 20px; /* Espacio entre las imágenes */
+  padding: 20px;
+  justify-content: center;
+}
+
+.movieCard {
+  list-style: none;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.movieImage {
+  border-radius: 10px;
+  background-color: azure;
+  width: 100px;
+  height: auto;
+  margin: 10px; /* Agregamos un margen alrededor de cada imagen */
+}
+
+@media (max-width: 300px) {
+  .moviesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 30px; /* Aumentamos el espacio entre las imágenes */
+    padding: 20px;
+    justify-content: center;
+  }
+}
+
+

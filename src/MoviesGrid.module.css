@@ -1,0 +1,30 @@
+/* MoviesGrid.module.css */
+.moviesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px); /* Reducimos el ancho de las columnas */
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .movieCard {
+    font-size: 0rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .movieImage {
+    border-radius: 20px;
+    background-color: azure;
+    width: 100px; /* Ajustamos el ancho de las imágenes */
+    height: auto; /* El alto se ajustará automáticamente para mantener las proporciones de la imagen */
+  }
+  
+  @media (max-width: 560px) {
+    .movieImage {
+      width: 90%;
+      height: auto;
+    }
+  }
+  

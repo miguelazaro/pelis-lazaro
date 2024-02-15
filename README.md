@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+## PASOS E INSTRUCCIONES DE PRUEBA ## 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1.. Comenzé con el proyecto creandolo con npx create-react-app pelis-lazaro 
+npm run start para inicializar  la aplicación en modo desarrollo.
 
-## Available Scripts
+2.. usé estilos CSS que está en la documentación de create react app que se llama Adding Styleshet, 
+esto para hacer prueas de estilos en mi index.js con un fondo negro y un itulo, que al final me decidi por un blanco como la 
+imagen proporcionada 
 
-In the project directory, you can run:
+3.. creé el archivo inicio.js que renderizaba en el index 
+4.. hice 2 header que se ven en la parte superior de la web en el archivo de inicio.js 
+![alt text](image.png)
+![alt text](image-2.png)
 
-### `npm start`
+5.. en la parte del Json tuve que usar otro ya que no se si solo era cosa mia ue no me funcionaba el proporcionado 
+![alt text](image-3.png) lo que hice aqui fue usar el metodo map() para iterar sobre el arreglo de peliculas llamado movies, 
+por cada pelicula en el arreglo se crea un elemento <MovieCard> con el key de la pelicula est hace que se cree una lista de componentes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+6.. en el archivo de MovieCard.js 
+utilize <li className={styles.movieCard}> que me renderiza un elemento <li> con la clase CSS movieCard, La clase movieCard del archivo css pa darle estilos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ tamien utilizé img className={styles.movieImage} que me  renderiza una imagen de la película. La URL de la imagen se construye utilizando la URL base de TMDB
 
-### `npm test`
+el <div className={styles.overlay}>: hizo que renderizara un <div> con la clase CSS, la capa se pondrá sobre la imagen de la película y contuvo  el título y la descripción de la película.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h3>{movie.title}</h3>: me renderizó el título de la película. El título se toma del objeto movie.
 
-### `npm run build`
+<p>{movie.overview}</p>: renderiz+o la descripción de la película
+![alt text](image-5.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6 .. agregué un footer que o tiene mucha importancia pero se ve 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+7.. hice const [loading, setLoading] = useState(true); esto declara un estado llamado loading utilizando el hook useState. Inicialmente se establece en true, lo que indica que la página está cargando  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+8.. en seriesPage.js y en Moviespage agregué consts [ showFooter, setShowFooter] = useState(false) utilizando el hook 
+useState para q que el pie de página no se muestre.
+useEffect(() => {}, []) va a definir  un efecto secundario que se ejecuta solo una vez después de que el componente se monta dentro de este efecto, se utiliza setTimeout para simular una carga de 1 segundo estableciendo loading en false después de un retraso de 1 segundo.
 
-### `npm run eject`
+![alt text](image-6.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+9-- para agregar redux  a mi proyecto, primero instalé npm install redux react-redux
+creé las carpetas de actions, reducers, y store  para manejar esl estado relacionado con las peliculas 
+ Utilizé un switch statement para manejar diferentes tipos de acciones, dependiendo del tipo de acción, el reducer actualizará el estado de manera adecuada.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+case ADD_MOVIE, en el caso de la acción ADD_MOVIE, el reducer crea un nuevo estado con una nueva película agregada a la lista de películas.
+![alt text](image-7.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Se deberá incluir además un documento que responda a las siguientes preguntas.
 
-## Learn More
+¿Cómo decidió las opciones técnicas y arquitectónicas utilizadas como parte de su solución?
+R= me basé en los requisitos que pedia el proyecto, ademas de investigar cada tipo de librerias o paquetes  que podría usar para mejorar la experiencia 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+¿Hay alguna mejora que pueda hacer en su envío?
+R= las cosas que me faltaron como lo de mostrar los resutados o agregar un estado de error 
 
-### Code Splitting
+¿Qué haría de manera diferente si se le asignara más tiempo?
+cambiaria muchisimo, ya que agregaria loq ue me faltó, ademas de un buscador que encuentre por el nombre que le pongamos una pelicula,
+o utilizar mas hooks y mejorar el diseño ademas de agregar otro json  para mostrar información adicional de cada película.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

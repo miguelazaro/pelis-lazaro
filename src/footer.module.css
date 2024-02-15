@@ -1,0 +1,41 @@
+/* footer.module.css */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(59, 57, 57);
+  color: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.socialIcons i,
+.appIcons i {
+  margin-right: 10px;
+  font-size: 40px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.appIcons {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,35 @@
+/* MovieCard.module.js */
+.movieCard {
+    position: relative; /* Ajustamos la posición de la descripción */
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .movieImage {
+    border-radius: 30px;
+    background-color: azure;
+    width: 110px;
+    height: auto;
+    margin: 10px;
+  }
+  
+  .overlay {
+    position: absolute; /* Posicionamos la descripción encima de la imagen */
+    top: 50%; /* Centramos verticalmente */
+    left: 50%; /* Centramos horizontalmente */
+    transform: translate(-50%, -50%); /* Centramos completamente */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    padding: 50px; /* Añadimos espacio alrededor del contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 80%; /* Ancho de la descripción */
+    max-height: 80%; /* Altura máxima de la descripción */
+    overflow-y: auto; /* Agregamos desplazamiento vertical si el contenido es demasiado grande */
+    display: none; /* Ocultamos la descripción por defecto */
+  }
+  
+  .movieCard:hover .overlay {
+    display: block; /* Mostramos la descripción al pasar el cursor sobre la tarjeta */
+  }
+  
