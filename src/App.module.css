@@ -42,8 +42,8 @@
 
 .moviesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Ajustamos el tamaño mínimo y máximo de las columnas */
-  gap: 20px; /* Espacio entre las imágenes */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+  gap: 20px; 
   padding: 20px;
   justify-content: center;
 }
@@ -59,7 +59,7 @@
   background-color: azure;
   width: 100px;
   height: auto;
-  margin: 10px; /* Agregamos un margen alrededor de cada imagen */
+  margin: 10px; 
 }
 
 @media (max-width: 300px) {

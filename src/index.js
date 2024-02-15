@@ -5,8 +5,8 @@ import Inicio from './Inicio';
 import SeriesPage from './SeriesPage';
 import MoviesPage from './MoviesPage';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Provider } from 'react-redux'; // Importa Provider
-import store from './store/store'; // Importa tu store de Redux
+import { Provider } from 'react-redux';
+import store from './store/store'; 
 
 ReactDOM.render(
   <Provider store={store}>

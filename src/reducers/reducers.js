@@ -1,4 +1,4 @@
-// reducers.js
+
 import { ADD_MOVIE, REMOVE_MOVIE } from '../actions/actions';
 
 const initialState = {

@@ -19,7 +19,7 @@
   
   .freeTrial {
     padding: 10px 20px;
-    background-color: #3498db; /* Color de fondo azul cielo */
+    background-color: #3498db; 
     color: white;
     border-radius: 5px;
   }
@@ -35,6 +35,6 @@
   
   .popularTitles {
     font-size: 24px;
-    color: #95a5a6; /* Color de texto gris */
+    color: #95a5a6; /
   }
   

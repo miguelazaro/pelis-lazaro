@@ -1,4 +1,4 @@
-// MoviesGrid.js
+
 import React from "react";
 import { MovieCard } from "./MovieCard";
 import movies from "./movies.json";

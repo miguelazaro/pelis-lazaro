@@ -1,4 +1,4 @@
-// MoviesPage.js
+
 import React, { useState, useEffect } from 'react';
 import { MovieCard } from './MovieCard';
 import styles from './App.module.css';
@@ -24,7 +24,7 @@ function MoviesPage() {
 
   useEffect(() => {
     setLoading(true);
-    setTimeout(() => setLoading(false), 1000); // Simula una carga de 1 segundo
+    setTimeout(() => setLoading(false), 1000); 
   }, []);
 
   return (
